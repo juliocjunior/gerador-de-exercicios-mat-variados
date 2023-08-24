@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    text-align: center;
+}
+
+.title {
+    margin-top: 7vh;
+    margin-bottom: 20vh;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(188, 5, 255);
+}
+
+
+h2 {
+    font-size: 60px;
+    margin-bottom: 5vh;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#user-answer, #submit-button {
+    padding: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+
+#user-answer {
+    display: block;
+    margin: 10px auto;
+    border-bottom: 4px solid black;
+}
+
+#submit-button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5vh;
+}
+
+#submit-button:hover {
+    transition: all 0.2s;
+    scale: 1.02;
+    cursor: pointer;
+}
+
+#result {
+    padding: 4px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.links {
+    position: fixed;
+    bottom: 7vh;
+    right: calc(50% - 250px)
+}
+
+.links a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.adicao {
+    color: orange;
+}
+
+.adicao:hover {
+    border-bottom: 3px solid orange;
+}
+
+
+.subtracao {
+    color: rgb(72, 72, 252);
+}
+
+.subtracao:hover {
+    border-bottom: 3px solid rgb(72, 72, 252);
+}
+
+
+.multiplicacao {
+    color: red;
+}
+
+.multiplicacao:hover {
+    border-bottom: 3px solid red;
+}
+
+.divisao {
+    color: green;
+}
+
+.divisao:hover {
+    border-bottom: 3px solid green;
+}
+
+@media (max-width: 1367px) {
+    .title {
+        margin-bottom: 15vh;
+    }
+}
