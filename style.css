@@ -49,6 +49,8 @@ h3 {
     color: white;
     border-radius: 10px;
     padding: 10px;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 5vh;
 }
 
@@ -62,6 +64,19 @@ h3 {
     padding: 4px;
     font-size: 40px;
     font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.respostaCorreta {
+    background-color: rgba(181, 255, 70, 0.382);
+    color: green;
+}
+
+.respostaErrada {
+    background-color: rgba(255, 70, 70, 0.382);
+    color: rgb(128, 0, 0);
 }
 
 .links {

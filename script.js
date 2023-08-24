@@ -5,8 +5,12 @@ function getRandomNumber(min, max) {
     
     // Função para gerar uma operação matemática aleatória
     function generateExercise() {
-        const num1 = getRandomNumber(1, 99);
-        const num2 = getRandomNumber(1, 99);
+        const numd1 = getRandomNumber(1, 75); 
+        const num21 = getRandomNumber(1, 99);
+        const num22 = getRandomNumber(1, 99);
+        const num31 = getRandomNumber(101, 999);
+        const num32 = getRandomNumber(101, 999);
+
         const operator = ['+', '*', '-', '/'][getRandomNumber(0, 3)];
     
         let question;
@@ -14,21 +18,21 @@ function getRandomNumber(min, max) {
     
         switch (operator) {
         case '+':
-            question = `${num1} + ${num2}`;
-            answer = num1 + num2;
+            question = `${num31} + ${num32}`;
+            answer = num31 + num32;
             break;
         case '*':
-            question = `${num1} * ${num2}`;
-            answer = num1 * num2;
+            question = `${num21} * ${num22}`;
+            answer = num21 * num22;
             break;
         case '-':
-            question = `${num1} - ${num2}`;
-            answer = num1 - num2;
+            question = `${num31} - ${num32}`;
+            answer = num31 - num32;
             break;
         case '/':
-            const divisibleNum = num1 * getRandomNumber(2, 15);
-            question = `${divisibleNum} / ${num1}`;
-            answer = divisibleNum / num1;
+            const divisibleNum = numd1 * getRandomNumber(2, 15);
+            question = `${divisibleNum} / ${numd1}`;
+            answer = divisibleNum / numd1;
             break;
         }
     
@@ -41,9 +45,10 @@ function getRandomNumber(min, max) {
     
         if (parseInt(userAnswer) === correctAnswer) {
         resultElement.textContent = 'Correto';
+        resultElement.classList.add('respostaCorreta');
         } else {
         resultElement.textContent = 'ERRADO, resposta correta: ' + correctAnswer;
-
+        resultElement.classList.add('respostaErrada');
         }
     
         setTimeout(function() {
