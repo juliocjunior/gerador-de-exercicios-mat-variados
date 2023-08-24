@@ -26,7 +26,7 @@ function getRandomNumber(min, max) {
             answer = num1 - num2;
             break;
         case '/':
-            const divisibleNum = num1 * getRandomNumber(1, 9);
+            const divisibleNum = num1 * getRandomNumber(2, 20);
             question = `${divisibleNum} / ${num1}`;
             answer = divisibleNum / num1;
             break;
