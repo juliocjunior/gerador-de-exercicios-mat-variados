@@ -48,7 +48,7 @@ function getRandomNumber(min, max) {
     
         setTimeout(function() {
         location.reload();
-        }, 1);
+        }, 2000);
     }
     
     // Função para iniciar o exercício
